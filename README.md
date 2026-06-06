@@ -1,2 +1,0 @@
-# Python-Pycharm
-Python-Pycharm
