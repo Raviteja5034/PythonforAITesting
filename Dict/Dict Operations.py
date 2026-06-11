@@ -74,3 +74,9 @@ print(mydict1)  # {}
 mydict3=mydict2.copy()
 print(mydict3)
 #{'First': 'Kiwi', 'Second': 2000, 'Fourth': 'Peddi'}
+
+#Joining the dictonaries
+mydict4={"Name":"Ravi","Job":"AITester"}
+mydict4.update(mydict3)
+print(mydict4)
+#{'Name': 'Ravi', 'Job': 'AITester', 'First': 'Kiwi', 'Second': 2000, 'Fourth': 'Peddi'}
