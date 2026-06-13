@@ -7,3 +7,8 @@ class TestClass:
 
 obj6=TestClass("Raviteja") #my name is Raviteja
 obj6.testmethod1("Hockey") #My fav sport is Hockey
+
+class TestClass1:
+    def __init__(self):
+        print("I am learning Python Constructor")
+obj7=TestClass1()  # I am learning Python Constructor
