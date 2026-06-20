@@ -5,7 +5,7 @@ print(fuction1())  #None
 
 
 def function2():
-    i=10
+    i=20
 
 print(function2())  #None
 

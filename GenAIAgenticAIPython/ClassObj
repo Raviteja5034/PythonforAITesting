@@ -1,0 +1,5 @@
+class TestClass:
+  def TestMethod(self):
+    print("This is a test method.")
+obj=TestClass()
+print(obj.TestMethod()) 
