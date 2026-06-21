@@ -1,0 +1,19 @@
+# var will have all values from for loop
+# it will go to min/max value and check if it is less than/greater than
+# assign the var value to min/max 
+lst=list(map(int,input("Please enter the list").split(",")))
+max=lst[0]
+for var in lst: # for var in range(1,len(lst))
+    if var>max:
+        max=var
+print(f"The max number in {lst} is: {max}")
+
+min=lst[1]
+for var1 in lst: # for var in range(1,len(lst))
+   if var1<min:
+    min=var1
+print(f"The min number in {lst} is: {min}")
+
+# Please enter the list 10,20,30,40,50
+# The max number in [10, 20, 30, 40, 50] is: 50
+# The min number in [10, 20, 30, 40, 50] is: 10
