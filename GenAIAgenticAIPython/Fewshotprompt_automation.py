@@ -6,7 +6,7 @@ from langchain_core.messages import (
     AIMessage
 )
 
-OPEN_API_KEY = os.environ.get("OPEN_API_KEY","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")
+OPEN_API_KEY = os.environ.get("OPEN_API_KEY","c")
 chat_llm=ChatOpenAI(api_key=OPEN_API_KEY , model="gpt-5.4-nano")
 
 messages=[SystemMessage(content="Act as drugs.com pharmasist,advise medication usage"),
