@@ -3,7 +3,7 @@
  * Handles: sending questions, rendering answers, showing sources, health checks
  */
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = window.location.origin;
 
 // ── DOM refs ──────────────────────────────────────────────────────────────────
 const chatMessages    = document.getElementById("chat-messages");

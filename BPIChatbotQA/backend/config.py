@@ -25,7 +25,7 @@ EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 USE_GROQ = True
 
 # ─── Groq Settings (used when USE_GROQ = True) ────────────────────────────────
-GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "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")
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 GROQ_MODEL   = "llama-3.3-70b-versatile"   # latest Groq free model (replaces llama3-70b-8192)
 
 # ─── Ollama Settings (used when USE_GROQ = False) ─────────────────────────────

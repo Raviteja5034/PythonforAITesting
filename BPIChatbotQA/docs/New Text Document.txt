@@ -1,0 +1,25 @@
+ FSC Admin Data Upload and Record Creation
+
+GIVEN that I am an FSC Admin
+WHEN I receive the CSV File from IB Reports Admin
+THEN I should be able to have the access to upload the data to Salesforce
+AND I should be able to confirm that the corresponding ALCO Yield and OB records are created
+AND I should be able to confirm that the record type used for ALCO Yield and OB records is "Yield/OB"
+
+IB Reports Admin Record Accessibility
+
+GIVEN that I am an IB Reports Admin
+WHEN I am informed that the ALCO Yield & OB records are already uploaded by FSC Admin
+THEN I should be able to have the access to the new records created for ALCO Yields & OB records
+AND I should be able to confirm that the corresponding ALCO Yield and OB fields are visible and values are stored
+AND I should be able to confirm that the record type used for ALCO Yield and OB records is "Yield/OB"
+AND I should be able to confirm that the page layout differs from the ALCO records created.
+
+Post Upload Error Screen
+
+GIVEN that I am a FSC Admin tasked to upload ALCO Yield and OB data
+AND I am using Data Import Wizard when uploading the data
+WHEN I encountered an error post uploading the ALCO Yield and OB data
+THEN I should be able to see the job results stating the number of successfully uploaded data
+AND I should be able to see the corresponding entries having errors and their causes of said errors
+AND I should be receiving a notification regarding the overall status of the upload on my registered email address associated to my user record in Salesforce

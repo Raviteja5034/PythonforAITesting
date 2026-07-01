@@ -98,6 +98,8 @@ def reset_pipeline():
 def _build_llm():
     """Return Groq or Ollama LLM based on config."""
     if USE_GROQ:
+        if not GROQ_API_KEY:
+            raise ValueError("GROQ_API_KEY is not set. Configure it as an environment variable before starting the app.")
         from langchain_groq import ChatGroq
         print(f"[RAG] Using Groq API — model: {GROQ_MODEL}")
         return ChatGroq(

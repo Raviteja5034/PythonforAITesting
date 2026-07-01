@@ -117,7 +117,7 @@ def ask(request: QuestionRequest):
         return AnswerResponse(
             answer=result["answer"],
             sources=result["sources"],
-            model=LLM_MODEL,
+            model=GROQ_MODEL if USE_GROQ else LLM_MODEL,
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error generating answer: {str(e)}")

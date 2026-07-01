@@ -71,3 +71,31 @@ python ingest.py --path "\\SERVER\Share\Folder"
 ```
 
 Then restart the backend server.
+
+## Render Deployment with Groq
+
+This project can be deployed to Render using the included [`render.yaml`](render.yaml).
+
+### Required environment variables
+
+Set these in the Render dashboard:
+
+- `GROQ_API_KEY` — your Groq API key
+- `BPI_DOCS_PATH` — already set to `/app/docs` in `render.yaml`
+
+### Deployment notes
+
+- Put your source documents inside the repo `docs/` folder so they are available at deploy time.
+- During Render build, the app installs dependencies and runs document ingestion automatically.
+- The frontend uses the same origin as the backend, so no localhost changes are needed in production.
+
+### Local security note
+
+Do not hardcode API keys in source code. This project now reads `GROQ_API_KEY` only from environment variables.
+
+### Render URLs to test after deploy
+
+- `/` — chatbot UI
+- `/health` — backend health status
+- `/docs` — FastAPI API docs
+
