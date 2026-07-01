@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: bpi-ibm-qa-chatbot
+    runtime: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false   # you enter this manually in Render dashboard
+      - key: BPI_DOCS_PATH
+        value: /app/docs
+      - key: PYTHONPATH
+        value: /app
+    disk:
+      name: vectorstore
+      mountPath: /app/vectorstore
+      sizeGB: 1

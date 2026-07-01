@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BPI-IBM QA Chatbot</title>
+  <link rel="stylesheet" href="/frontend/style.css" />
+</head>
+<body>
+
+  <!-- ── Header ─────────────────────────────────────────────── -->
+  <header>
+    <div class="header-inner">
+      <div class="header-title">
+        <img src="/frontend/logo.png" alt="BPI IBM Logo" class="header-logo" />
+        <div class="header-text">
+          <h1>BPI-IBM <span class="title-tag">QA Chatbot</span></h1>
+          <p class="subtitle">Your intelligent assistant for BPI-IBM testing &amp; quality assurance</p>
+        </div>
+      </div>
+      <div id="status-badge" class="badge badge--checking">Checking…</div>
+    </div>
+  </header>
+
+  <!-- ── Main Layout ────────────────────────────────────────── -->
+  <main>
+
+    <!-- Chat panel -->
+    <section class="chat-panel">
+
+      <div id="chat-messages" class="chat-messages">
+        <!-- Welcome message -->
+        <div class="message message--bot">
+          <div class="avatar">🤖</div>
+          <div class="bubble">
+            <p>Hello! I'm the <strong>BPI-IBM QA Chatbot</strong>.</p>
+            <p>I can help you understand:</p>
+            <ul>
+              <li>User story requirements &amp; acceptance criteria</li>
+              <li>System design &amp; architecture decisions</li>
+              <li>Expected behavior before you raise a defect</li>
+              <li>Business process &amp; integration flows</li>
+            </ul>
+            <p>Type your question below to get started.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Typing indicator -->
+      <div id="typing-indicator" class="typing-indicator hidden">
+        <div class="avatar">🤖</div>
+        <div class="bubble bubble--typing">
+          <span></span><span></span><span></span>
+          <small id="typing-timer" style="margin-left:8px;font-size:11px;color:#57606a;">Thinking…</small>
+        </div>
+      </div>
+
+      <!-- Input bar -->
+      <div class="input-bar">
+        <textarea
+          id="question-input"
+          placeholder="e.g. What is the expected behavior when a user submits a duplicate order?"
+          rows="2"
+          maxlength="2000"
+        ></textarea>
+        <button id="send-btn">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+          </svg>
+        </button>
+      </div>
+
+      <p class="char-hint" id="char-hint">0 / 2000</p>
+    </section>
+
+    <!-- Sidebar: quick questions + tips -->
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <h3>💡 Sample Questions</h3>
+        <div class="quick-questions" id="quick-questions">
+          <button>What happens when a payment fails?</button>
+          <button>What is the timeout behavior for session expiry?</button>
+          <button>What are the acceptance criteria for user registration?</button>
+          <button>How is data validated before it is saved?</button>
+          <button>What error message should appear for invalid input?</button>
+          <button>What roles are allowed to approve a request?</button>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>📋 Tips for Testers</h3>
+        <ul class="tips">
+          <li>Ask about <em>expected</em> behavior before raising a defect</li>
+          <li>Include the specific screen or feature name in your question</li>
+          <li>Ask for acceptance criteria to validate your test case</li>
+          <li>Check integration behavior: "What happens when System A calls System B?"</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>⚙️ System</h3>
+        <div class="system-info" id="system-info">
+          <div class="info-row"><span>Model</span><span id="info-model">—</span></div>
+          <div class="info-row"><span>Docs loaded</span><span id="info-docs">—</span></div>
+          <div class="info-row"><span>Auto-watch</span><span id="info-watcher">—</span></div>
+          <div class="info-row"><span>Last updated</span><span id="info-last-ingest">—</span></div>
+          <div class="info-row"><span>Last file</span><span id="info-last-file" style="font-size:11px;word-break:break-all;">—</span></div>
+        </div>
+        <button class="btn-secondary" id="refresh-btn">↻ Refresh Status</button>
+      </div>
+    </aside>
+
+  </main>
+
+  <script src="/frontend/app.js"></script>
+</body>
+</html>
