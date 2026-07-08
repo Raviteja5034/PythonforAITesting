@@ -1,0 +1,88 @@
+{
+  "AI_Testing_Basics_Short_Guide.pdf": {
+    "chunk_count": 2,
+    "ingested_at": "2026-07-01 12:40:34",
+    "mtime": 1782824174.4589427,
+    "relative_path": "AI_Testing_Basics_Short_Guide.pdf",
+    "sha256": "658432006608165812189079a0117849d51ed49632b62cf34c8e50e615a42b50",
+    "size": 6926,
+    "source_file": "AI_Testing_Basics_Short_Guide.pdf",
+    "status": "indexed"
+  },
+  "Bahubali_Short_Story.pdf": {
+    "chunk_count": 7,
+    "ingested_at": "2026-07-01 12:40:35",
+    "mtime": 1782747183.5210247,
+    "relative_path": "Bahubali_Short_Story.pdf",
+    "sha256": "55cab6f958ecd45d9c08205ca416af2c1dbf32e31c4990ff5160ba037849e3d9",
+    "size": 21114,
+    "source_file": "Bahubali_Short_Story.pdf",
+    "status": "indexed"
+  },
+  "New Microsoft Word Document (2).docx": {
+    "chunk_count": 1,
+    "ingested_at": "2026-07-01 12:40:35",
+    "mtime": 1782872047.4273117,
+    "relative_path": "New Microsoft Word Document (2).docx",
+    "sha256": "7e6899553f1f7beaceb4cfb4e0a6598eaa1501fd3196bb0cea895d75cb2df9ba",
+    "size": 15478,
+    "source_file": "New Microsoft Word Document (2).docx",
+    "status": "indexed"
+  },
+  "New Microsoft Word Document (3).docx": {
+    "chunk_count": 7,
+    "ingested_at": "2026-07-01 15:21:58",
+    "last_attempted_at": "2026-07-01 15:21:58",
+    "last_error": null,
+    "mtime": 1782899484.8013382,
+    "relative_path": "New Microsoft Word Document (3).docx",
+    "sha256": "4fdaf618522728cb525e4291fafe5efe26a68094f9a2ee71ce173b2b5b35f3c2",
+    "size": 14727,
+    "source_file": "New Microsoft Word Document (3).docx",
+    "status": "indexed"
+  },
+  "New Microsoft Word Document (4).docx": {
+    "chunk_count": 1,
+    "ingested_at": "2026-07-01 17:37:46",
+    "last_attempted_at": "2026-07-01 17:37:46",
+    "last_error": null,
+    "mtime": 1782907626.1107306,
+    "relative_path": "New Microsoft Word Document (4).docx",
+    "sha256": "50408164d8315e4c3621c43f33a97d5f5df0d24ad58d54dc421d777d35225c1d",
+    "size": 13385,
+    "source_file": "New Microsoft Word Document (4).docx",
+    "status": "indexed"
+  },
+  "New Microsoft Word Document.docx": {
+    "chunk_count": 19,
+    "ingested_at": "2026-07-01 17:36:12",
+    "last_attempted_at": "2026-07-01 17:36:12",
+    "last_error": null,
+    "mtime": 1782907551.6419563,
+    "relative_path": "New Microsoft Word Document.docx",
+    "sha256": "419e9bcda5e33e6065e53c9bceb66b3977cd382b67e9bcd3c2798f1355ae2194",
+    "size": 16989,
+    "source_file": "New Microsoft Word Document.docx",
+    "status": "indexed"
+  },
+  "New Text Document.txt": {
+    "chunk_count": 3,
+    "ingested_at": "2026-07-01 12:40:41",
+    "mtime": 1782824617.0589046,
+    "relative_path": "New Text Document.txt",
+    "sha256": "7dfec7a883d2792e8c8f76ed1258f84d3f15eb6b8ab470e77696f27d20a1759e",
+    "size": 1557,
+    "source_file": "New Text Document.txt",
+    "status": "indexed"
+  },
+  "format1_Resume.pdf": {
+    "chunk_count": 6,
+    "ingested_at": "2026-07-01 12:40:42",
+    "mtime": 1782394830.187585,
+    "relative_path": "format1_Resume.pdf",
+    "sha256": "400fc039c42948b368d0c185b79d9ae1d669c251c5dfff332a52ded87273a97f",
+    "size": 864935,
+    "source_file": "format1_Resume.pdf",
+    "status": "indexed"
+  }
+}
